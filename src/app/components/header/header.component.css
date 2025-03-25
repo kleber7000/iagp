@@ -1,0 +1,142 @@
+/* Estilização geral do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 50% 1% 10%;
+  /* Aumenta o espaçamento lateral */
+  background-color: #fff;
+  /* Cor de fundo do cabeçalho */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  margin-left: 100px;
+  /* Afasta a logo da borda esquerda */
+}
+
+.logo img {
+  height: 60px;
+  max-width: 100%;
+}
+
+/* Menu principal */
+nav {
+  margin-right: 20%;
+  /* Afasta o menu da borda direita */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  /* Aumenta o espaçamento entre os itens do menu */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #008DCA;
+  /* Cor de destaque ao passar o mouse */
+}
+
+/* Submenu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 200px;
+}
+
+nav ul li ul li {
+  padding: 10px;
+}
+
+nav ul li ul li a {
+  padding: 10px 15px;
+  color: #333;
+  display: block;
+  white-space: nowrap;
+}
+
+nav ul li ul li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Exibir submenu ao passar o mouse */
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Menu responsivo */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    /* Ajusta o espaçamento para telas menores */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Mostrar menu quando ativo */
+  nav.active {
+    display: flex;
+  }
+}

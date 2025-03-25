@@ -1,0 +1,30 @@
+<header>
+  <div class="logo">
+    <a href="/">
+      <img src="AGP_Color.png" alt="Instituto AGP">
+    </a>
+  </div>
+
+  <!-- Botão para menu mobile -->
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+  <nav [class.active]="menuAberto">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/sobre-nos">Sobre Nós</a></li>
+      <li>
+        <a href="#">Capacitação</a>
+        <ul>
+          <li><a href="/capacitacao/cursos-presenciais">Cursos Presenciais</a></li>
+          <li><a href="/capacitacao/simposios">Simpósios</a></li>
+          <li><a href="/capacitacao/seminarios">Seminários</a></li>
+          <li><a href="/capacitacao/conferencias">Conferências</a></li>
+          <li><a href="/capacitacao/oficinas">Oficinas</a></li>
+        </ul>
+      </li>
+      <li><a href="/portfolio">Portfólio</a></li>
+      <li><a href="/contato">Contato</a></li>
+      <li><a href="https://aluno.institutoagp.com.br">Área do Aluno</a></li>
+    </ul>
+  </nav>
+</header>
