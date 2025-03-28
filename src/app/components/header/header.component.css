@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 50% 1% 10%;
+  padding: 1% 50% 0% 10%;
   /* Aumenta o espaçamento lateral */
   background-color: #fff;
   /* Cor de fundo do cabeçalho */
@@ -13,6 +13,10 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+}
+
+.logo-pe {
+  color: #008BCC;
 }
 
 /* Logo */
@@ -47,7 +51,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #0E487B;
   font-weight: bold;
   padding: 10px 15px;
   display: block;
@@ -78,7 +82,7 @@ nav ul li ul li {
 
 nav ul li ul li a {
   padding: 10px 15px;
-  color: #333;
+  color: #0E487B;
   display: block;
   white-space: nowrap;
 }
@@ -99,7 +103,7 @@ nav ul li:hover ul {
   cursor: pointer;
   background: none;
   border: none;
-  color: #333;
+  color: #0E487B;
 }
 
 /* Responsividade */

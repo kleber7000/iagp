@@ -7,6 +7,7 @@ import { SimposiosComponent } from './components/simposios/simposios.component';
 import { SeminariosComponent } from './components/seminarios/seminarios.component';
 import { ConferenciasComponent } from './components/conferencias/conferencias.component';
 import { OficinasComponent } from './components/oficinas/oficinas.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 export const routes: Routes = [
   {
@@ -47,6 +48,11 @@ export const routes: Routes = [
   {
     path: "oficinas",
     component: OficinasComponent
+  },
+
+  {
+    path: "portfolio",
+    component: PortfolioComponent
   },
 
   {
