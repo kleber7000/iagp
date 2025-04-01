@@ -60,5 +60,4 @@ export const routes: Routes = [
     component: SobreNosComponent
   },
 
-
 ];
