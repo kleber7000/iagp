@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10% 0% 0% 0%;
-  gap: 20px;
-  background-color: rgb(169, 169, 169);
+  padding: 5% 8% 0% 5%;
+  gap: 10px;
+  background-color: #FFFFFF;
 }
 
 .text-container {
@@ -19,8 +19,18 @@
 }
 
 .image-container img {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
+}
+
+.h2-subtitulo {
+  font-size: 30px;
+  color: #00376B;
+}
+
+.h2-titulo {
+  font-size: 50px;
+  color: #00376B;
 }
 
 /* Responsividade */
