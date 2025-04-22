@@ -1,0 +1,16 @@
+<a *ngIf="link" [href]="link">
+  <img
+    [src]="src"
+    [alt]="alt"
+    [style.width]="largura"
+    [style.height]="altura"
+  />
+</a>
+
+<img
+  *ngIf="!link"
+  [src]="src"
+  [alt]="alt"
+  [style.width]="largura"
+  [style.height]="altura"
+/>

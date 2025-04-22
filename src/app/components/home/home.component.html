@@ -1,21 +1,51 @@
 <app-header></app-header>
 <section class="content-section">
   <div class="text-container">
-    <h2 class="h2-subtitulo">Sobre o Instituto</h2>
-    <h2 class="h2-titulo">Olá, somos o Instituto AGP</h2>
-    <p>Este é um pequeno texto de exemplo que pode ser substituído pelo conteúdo desejado.</p>
-    <p>O Instituto AGP é uma instituição que contribui com a Gestão Pública por meio de capacitações inovadoras,
-      comprometidos com a eficiência, transparência e educação de qualidade.
-      <br><br>Este objetivo reflete a missão de preparar gestores públicos que possam atuar com responsabilidade, visão
-      estratégica e compromisso com o bem comum.
-      <br><br>Fundada em 2019, é uma empresa que preza pelo alto nível técnico de seus treinamentos e capacitações, com
-      atendimento personalizado e humanizado.
+    <app-titulo
+      texto="Sobre o Instituto"
+      cor="#00376b"
+      alinhamento="left"
+      tamanho="30px"
+      alturaLinha=""
+      espessura="200"
+    >
+    </app-titulo>
+
+    <app-titulo
+      texto="Olá, somos o Instituto AGP"
+      cor="#00376b"
+      alinhamento="left"
+      tamanho="50px"
+      alturaLinha="1.2"
+      espessura="800"
+    >
+    </app-titulo>
+
+    <p>
+      Este é um pequeno texto de exemplo que pode ser substituído pelo conteúdo
+      desejado.
+    </p>
+    <p>
+      O Instituto AGP é uma instituição que contribui com a Gestão Pública por
+      meio de capacitações inovadoras, comprometidos com a eficiência,
+      transparência e educação de qualidade. <br /><br />Este objetivo reflete a
+      missão de preparar gestores públicos que possam atuar com
+      responsabilidade, visão estratégica e compromisso com o bem comum.
+      <br /><br />Fundada em 2019, é uma empresa que preza pelo alto nível
+      técnico de seus treinamentos e capacitações, com atendimento personalizado
+      e humanizado.
     </p>
   </div>
   <div class="image-container">
-    <img src="equipe.webp" alt="Imagem ilustrativa">
+    <app-imagem
+      src="equipe.webp"
+      alt="Imagem ilustrativa"
+      largura="auto"
+      altura="auto"
+      link=""
+    >
+    </app-imagem>
   </div>
 </section>
-
 
 <app-footer></app-footer>
